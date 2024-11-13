@@ -1,0 +1,322 @@
+.btn-crud {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Color azul */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-crud:hover {
+    background-color: #0056b3; /* Color azul más oscuro en hover */
+    cursor: pointer;
+}
+
+.btn-crud:active {
+    background-color: #004085; /* Color aún más oscuro cuando el botón es presionado */
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e4e8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del header */
+header {
+    background-color: #1e2a38;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Estilo del main */
+main {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #1e2a38;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilo para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+}
+
+th {
+    background-color: #1e2a38;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff5649;
+    transform: scale(1.05);
+}
+
+/* Efecto para formulario */
+form {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6f61;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales del login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #1e2a38;
+    text-transform: uppercase;
+}
+
+.login-box p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.login-box input[type="email"]:focus,
+.login-box input[type="password"]:focus {
+    border-color: #ff6f61;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de login */
+.login-box button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-box button:hover {
+    background-color: #ff5649;
+    transform: translateY(-3px);
+}
+
+/* Enlace para olvidar contraseña */
+.login-box a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.login-box a:hover {
+    color: #0056b3;
+}
+
+/* Añadir un footer ligero */
+.login-box footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+
+
+
+
+/* Animación suave al cargar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main, table, form {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}

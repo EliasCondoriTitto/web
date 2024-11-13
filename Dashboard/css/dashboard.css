@@ -1,0 +1,22 @@
+
+.dropdown-menu {
+    transition: all 1.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-item {
+    color: #000; /* Color de texto predeterminado */
+}
+.dropdown-item:hover {
+    background-color: #ff6f61; /* Cambia el color de fondo al pasar el mouse */
+    color: white; /* Cambia el color del texto al pasar el mouse */
+} 
+
+.btn-custom {
+    background-color: #ff6f61 !important; /* Color de fondo */
+    color: white !important; /* Color del texto */
+}
